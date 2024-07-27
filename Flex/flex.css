@@ -1,12 +1,75 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 main {
+    width: 90%;
+    margin: auto;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.row1, .row2, .row3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#boxone {
+    flex-grow: 2;
+}
+
+#boxtwo {
+    flex-grow: 1;
+}
+
+#boxthree {
+    flex-grow: 1;
+}
+
+.row2 {
+    
+}
+
+#boxfour {
+    flex-grow: 1;
+}
+
+#boxfive {
+    flex-grow: 2;
+}
+
+#boxsix {
+    flex-grow: 1;
+}
+
+.row3 {
+    
+}
+
+#boxseven {
+    flex-grow: 1;
+}   
+
+#boxeight {
+    flex-grow: 1;
+}
+
+#boxnine {
+    flex-grow: 2;
 }
 
 div.box {
     padding: 10px;
     margin: 5px;
+    width: 80%;
     background-color: purple;
     color: goldenrod;
     border-radius: 10px;
+    flex-basis: 0;
 }
+
