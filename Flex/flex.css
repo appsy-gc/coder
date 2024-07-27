@@ -1,0 +1,12 @@
+main {
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.box {
+    padding: 10px;
+    margin: 5px;
+    background-color: purple;
+    color: goldenrod;
+    border-radius: 10px;
+}
