@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 10px;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#logo {
+    padding: 10px 0 10px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+nav div {
+    padding: 10px;
+}
+
+main {
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socials div {
+    padding: 20px;
+}
