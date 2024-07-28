@@ -1,34 +1,61 @@
 body {
     padding: 0;
     margin: 0;
+
+    /* Includes padding and border */
     box-sizing: border-box;
 }
 
 main {
     width: 90%;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    display: flex; 
+
+    /* nowrap | wrap | wrap-reverse */
+    /* flex-wrap: wrap; */
+
+    /* row | row-reverse | column | column-reverse */
+    /* flex-direction: column; */
+
+    /* short hand for flex-wrap and flex-direction */
+    flex-flow: wrap;
+
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .row1, .row2, .row3 {
     width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    height: 200px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+main div div {
+    height: 100px;
 }
 
 #boxone {
-    flex-grow: 2;
+    /* Grows twice as much. Use flex-shrink to invert. */
+    flex-grow: 1;
+
+    /* Reorder items - ensure each item is defined */
+    /* order: 3; */
 }
 
 #boxtwo {
+    /* Each item should have flex-grow defined */
     flex-grow: 1;
+    /* order: 2; */
 }
 
 #boxthree {
-    flex-grow: 1;
+    flex-grow: 2;
+    /* order: 1; */
+    align-self: flex-start;
 }
 
 #boxfour {
@@ -36,23 +63,27 @@ main {
 }
 
 #boxfive {
-    flex-grow: 2;
+    /* flex shorthand for flex-grow, flex-shrink and flex-basis. flex: 4 is the same as grow 4, shrink 1 and basis 0% */
+    flex: 4;
 }
 
 #boxsix {
-    flex-grow: 1;
+    flex: 1;
 }
 
 #boxseven {
-    flex-grow: 1;
+    flex: 1;
 }   
 
 #boxeight {
-    flex-grow: 1;
+    flex: 1;
 }
 
 #boxnine {
-    flex-grow: 2;
+    /* specifies the initial length of a flexible item */
+    /* flex-basis: 100px; */
+    flex: 2;
+    align-self: flex-end;
 }
 
 div.box {
@@ -62,6 +93,18 @@ div.box {
     background-color: purple;
     color: goldenrod;
     border-radius: 10px;
+
+    /* Required for flex-grow */
     flex-basis: 0;
+}
+
+@media only screen and (max-width: 800px) {
+    #boxthree, #boxfive, #boxnine {
+        flex: 1;
+    }
+}
+
+.box:nth-of-type(even) {
+    color: white;
 }
 
