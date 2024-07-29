@@ -1,0 +1,54 @@
+body {
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main {
+    padding: 10px;
+}
+
+.gradient div {
+    height: 100px;
+    margin: 20px;
+}
+
+#linear {
+    background-image: linear-gradient(to right, white, purple, yellow);
+}
+
+#radial {
+    background-image: radial-gradient(circle at center, white, purple, yellow);
+}
+
+#linearradial {
+    background-image: linear-gradient(to right, purple, yellow), radial-gradient(circle at center, yellow, purple);
+}
+
+.boxes {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.box {
+    text-align: center;
+    height: 300px;
+    width: 300px;
+    color: lightskyblue;
+    background-color: navy;
+    align-content: center;
+    border-radius: 50px;
+}
+
+#one {
+    box-shadow: 20px 20px 8px 2px rgba(255,0,0,0.7);
+}
+
+#two {
+    text-shadow: 5px 5px 3px rgba(2555,0,0,0.7);
+}
+
+#three {
+    box-shadow: inset 20px 20px 8px 2px rgba(255,0,0,0.7);
+}
