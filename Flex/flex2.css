@@ -90,3 +90,9 @@ h1, h3 {
         display: none;
     }
 }
+
+/* Use @media print {} to alter styling when the site is printed */
+
+@media (orientation: landscape) {
+    /* Add styling for landscape orientation, and can also be used for portrait */
+}
