@@ -34,8 +34,8 @@ main {
 
 .box {
     text-align: center;
-    height: 300px;
-    max-width: 400px;
+    height: 200px;
+    max-width: 300px;
     flex-basis: 300px;
     flex-grow: 1;
     color: lightskyblue;
@@ -45,24 +45,36 @@ main {
     perspective: 200px;
 }
 
-#one {
+.one {
     box-shadow: 20px 20px 8px 2px rgba(255,0,0,0.7);
     transform: translateX(20px);
     transform: translateY(20px);
     transform: rotate(-20deg);
 }
 
-#two {
+.two {
     text-shadow: 5px 5px 10px rgba(2555,0,0,7);
     transform: scale(1.0, 1.5);
     transform: skew(45deg);
 }
 
-#three {
+.three {
     box-shadow: inset 20px 20px 8px 2px rgba(255,0,0,0.7);
     transform: rotate(20deg);
     /* Matrix (scaleX() skewY(), skewX(), scaleY() translateX() TranslateY() */
     transform: matrix(1, 0.5, -0.5, 1, 0, 0);
+}
+
+.four {
+
+}
+
+.five {
+
+}
+
+.six {
+    
 }
 
 /* Tells the responsive design what to do based on the size of the screen. */
