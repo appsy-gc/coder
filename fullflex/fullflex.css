@@ -1,0 +1,82 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+nav div {
+    margin: 10px;
+    background-color: lightgreen;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    text-align: center;
+    height: 80vh;
+}
+
+.left, .right {
+    width: 20%;
+    background-color: lightgray;
+    align-content: center;
+}
+
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: space-around;
+    background-color: lightgreen;
+    align-content: center;
+}
+
+.box {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    background-color: green;
+    color: white;
+    align-content: center;
+    flex: 1 1 100px;
+    transition: background-color 0.5s, color 0.5s, height 0.5s ease-in-out 0.2s;
+}
+
+.one:hover {
+    background-color: purple;
+    color: yellow;
+    height: 150px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+/* Each keyframe is specified by a percentage (0 - 100%%) or from and to */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes grow {
+    from { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    to { transform: scale(1); }
+}
+
+.two {
+    /* transform: scale(1.2, 1.2); */
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+.two:hover {
+    animation: grow 2s ease, rotate 2s ease 2s;
+}
