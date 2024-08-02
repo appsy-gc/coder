@@ -1,0 +1,16 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+  color: red;
+}
+.box-one {
+  font-size: 20px;
+}
+.box-two {
+  font-size: 30px;
+}
+.box-three {
+  font-size: 40px;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box {
+    color: red;
+
+    &-one {
+        font-size: 20px;
+    }
+
+    &-two {
+        font-size: 30px;
+    }
+
+    &-three {
+        font-size: 40px;
+    }
+}
