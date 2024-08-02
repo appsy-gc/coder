@@ -1,5 +1,25 @@
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+p {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+}
+
+.parent {
+  display: flex;
+  margin: auto;
+}
+
+.typing-effect {
+  font-size: 36px;
+  animation: change-width 4s infinite 3s, typing-effect 0.5s infinite 2s;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .box {
@@ -7,10 +27,33 @@ body {
 }
 .box-one {
   font-size: 20px;
+  color: purple;
 }
 .box-two {
   font-size: 30px;
+  color: yellow;
 }
 .box-three {
   font-size: 40px;
+  color: blue;
+}
+
+@keyframes change-width {
+  0% {
+    width: 0;
+  }
+  50% {
+    width: 41%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@keyframes typing-effect {
+  0% {
+    border-right: none;
+  }
+  50% {
+    border-right: 1px solid black;
+  }
 }/*# sourceMappingURL=style.css.map */

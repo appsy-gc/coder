@@ -1,5 +1,30 @@
+@use "font";
+
+$font-purple: purple;
+$font-yellow: yellow;
+
 body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+main {
+    
+}
+
+.parent {
+    display: flex;
+    // border: 1px solid red;
+    margin: auto;
+}
+
+.typing-effect {
+    font-size: 36px;
+    // width: 0;
+    animation: change-width 4s infinite 3s, typing-effect 0.5s infinite 2s;
+    // animation-iteration-count: infinite;
+
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .box {
@@ -7,13 +32,39 @@ body {
 
     &-one {
         font-size: 20px;
+        color: $font-purple;
     }
 
     &-two {
         font-size: 30px;
+        color: $font-yellow;
     }
 
     &-three {
         font-size: 40px;
+        color: font.$font-blue;
+    }
+}
+
+@keyframes change-width {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 41%;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes typing-effect {
+    0% { 
+        border-right: none;
+     }
+    50% { 
+        border-right: 1px solid black; 
     }
 }
